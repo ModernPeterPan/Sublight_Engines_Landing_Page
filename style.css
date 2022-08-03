@@ -1,29 +1,26 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial;
+* { margin: 0; padding: 0; }
+.row{
+    position: relative;
+    display: flex;
 }
 nav {
-    position: fixed;
-    top: 24px;
-    left: 0px;
-    width: 1440px;
+    position: absolute;
+    width: 100%;
     height: 68px;
-    padding: 10px 90px;
-    box-sizing: border-box;
+    left: 0px;
+    top: 24px;
     background: rgba(0,0,0,0.69);
-    border-radius: 0px;
+    display: flex;
 }
-nav .logo{
-    padding: 22px 20px;
-    height: 80px;
-    float: left;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
+.cie-logo{
+    position: relative;
+    top: -9px;
+    left: 20px;
 }
 nav ul{
+    position: relative;
+    left: 140px;
+    top: 23px;
     list-style: none;
     float: right;
     margin: 0;
@@ -31,9 +28,8 @@ nav ul{
     display: flex;
 }
 nav ul li a{
-    line-height: 80px;
     color: #fff;
-    padding: 12px 30px;
+    padding: 12px 15px;
     text-decoration: none;
     font-size: 14px;
     font-weight: bold;
@@ -43,10 +39,118 @@ nav ul li a:hover{
     background: rgba(0,0,0,0.69);
     border-radius: 6px;
 }
-section .header{
+.our-mission{
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     background: url(images/bkg_1\ 1.png);
     background-size: cover;
-    background-position: center;
+    background-position: auto;
+}
+.mission-text{
+    position: relative;
+    left: auto;
+    top: 570px;
+    padding: 5px;
+}
+#motto-1{
+    position: relative;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#motto-2{
+    position: relative;
+    font-weight: 800;
+    font-size: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+#elevator-btn{
+    position: relative;
+    display: inline;
+    left: 600px;
+    padding-top: 30px;
+}
+
+/* Second section */
+#container-color{
+    background-color: #383838;
+}
+.container{
+    padding: 5%;
+}
+.sub-title{
+    position: relative;
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.section-title{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    font-weight: 800;
+    font-size: 45px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.seperator{
+    position: relative;
+    top: 50px;
+    left: 500px;
+}
+.texts{
+    display: flex;
+    flex-direction: column;
+}
+.container .row{
+    position: relative;
+    display: flex;
+    top: 50px;
+}
+.designs{
+    width: 80%;
+}
+#design2{
+    width: 86%;
+}
+.column{
+    flex: 33.33%;
+    padding: 5%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    color: #FFFFFF;
+}
+
+/* 3rd Section */
+.sec-text{
+    padding: 5%;
+}
+#security-subtitle{
+    position: relative;
+    padding-top: 5%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: #292929;
+}
+#security-title{
+    position: relative;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: left;
+    color: #292929;
+}
+.description{
+    position: relative;
+    top: 5%;
+    font-size: 120%;
+    text-align: left;
+    color: #292929;
+}
+.sec-image{
+    padding: 3%;
 }
