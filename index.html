@@ -32,7 +32,7 @@
                 <p id="motto-2">TAKE YOU TO THE TOP</p>
             </div>
             <div id="elevator-btn" class="mission-text">
-                <span><img src="images/elevator button.svg" alt=""></span>
+                <span><img src="images/elevator button.svg" alt=""></img></span>
             </div>
         </section>
 
@@ -138,23 +138,62 @@
                     </h2>
                     <img src="images/separator-black.svg" alt=""></img>
                 </div>
-                <div class="input-field">
-                    <div class="input">
-
+                <form>
+                    <label for="name" id="label1">NAME *</label><br>
+                    <input type="text" name="name" id="name"><br>
+                    <label for="email" id="label2">EMAIL ADDRESS *</label><br>
+                    <input type="email" name="email" id="email">
+                    <div class="input-column">
+                        <div class="number">
+                            <label for="phone" id="label3">PHONE NUMBER</label><br>
+                            <input type="number" name="phone" id="phone"><br>
+                        </div>
+                        <div class="lang">
+                            <label for="language" id="lab-lang">PREFERRED LANGUAGE</label><br>
+                            <select name="languages" id="langs">
+                            <option value=""> SELECT </option>
+                            <option value="en">ENGLISH</option>
+                            <option value="fr">FRANÇAIS</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="input">
-
+                    <div class="submit">
+                        <input type="button" value="SUBMIT">
                     </div>
-                    <div class="input">
+                </form>
+            </div>
 
-                    </div>
-                    <div class="input">
+        </section>
 
-                    </div>
+        <section class="motto">
+
+            <div class="row">
+                <div class="column" id="motto-txt">
+                    <p><br>With your trust since 1943.</p>
                 </div>
-                <div class="submit">
-                    <p>SUBMIT</p>
+                <div class="column" id="motto-img">
+                    <img src="images/signature.svg" alt=""></img>
                 </div>
+            </div>
+
+        </section>
+
+        <section class="contact">
+
+            <div class="row">
+                <div class="column">
+                    <p class="usa">UNITED STATES OFFICE</p>
+                    <p class="usa-address">456 HARLEM BOULEVARD<br>
+                    SARATOGA SPRINGS, NY, USA</p>
+                    <p><bold>1 999 543-4567</bold></p>
+                    
+                </div>
+                <div class="column">
+
+                </div>
+            </div>
+            <div class="copy">
+
             </div>
 
         </section>
