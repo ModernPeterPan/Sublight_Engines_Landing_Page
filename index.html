@@ -4,54 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sublight Engines</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
     <main>
-        <section class="header">
-            <nav>
+        <header>
+            <nav class="navbar">
+                
                 <div class="cie-logo">
-                    <img src="images/logo_sublight.svg"></img>
+                    <img class="responsive" src="images/logo_sublight.svg"></img>
                 </div>
-                <ul id="nav-options">
-                    <li><a href="#">OUR SERVICES</a></li>
-                    <li><a href="#">OUR PRODUCTS</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">CONTACT US</a></li>
+                <ul class="nav-options">
+                    <li class="nav-item"><a href="#" class="nav-link">OUR SERVICES</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">OUR PRODUCTS</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">ABOUT US</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">CONTACT US</a></li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar">
+
+                    </span>
+                    <span class="bar">
+
+                    </span>
+                    <span class="bar">
+
+                    </span>
+                </div>
+
             </nav>
-        </section>
+        </header>
 
         <section class="our-mission">
-            <div class="mission-text">
-                <p id="motto-1">OUR MISSION</p>
-            </div>
-            <div class="mission-text">
-                <p id="motto-2">TAKE YOU TO THE TOP</p>
-            </div>
-            <div id="elevator-btn" class="mission-text">
-                <span><img src="images/elevator button.svg" alt=""></img></span>
+            <div class="container text">
+                <div class="miss-content">
+                    <p id="motto-1">OUR MISSION</p>
+                    <p id="motto-2">TAKE YOU TO THE TOP</p>
+                    <span><img src="images/elevator button.svg" alt=""></img></span>
+                </div>
             </div>
         </section>
 
         <section class="we-do">
-            <div class="container" id="container-color">
+            <div class="container responsive" id="container-color">
                 <div class="texts">
-                    <div>
                         <h4 class="sub-title">ONE-STOP FOR YOUR ELEVATOR NEEDS</h4>
-                    </div>
-                    <div>
                         <h2 class="section-title">ONE STEP CLOSER TO SUCCESS</h2>
-                    </div>
-                    <div>
-                        <img src="images/separator.svg" alt="" class="seperator"></img>
-                    </div>
+                        <img src="images/separator.svg" alt="" class="separator"></img>
                 </div>
                 
-                <div class="row">
+                <div class="row responsive">
                     <div class="column">
                         <img src="images/design.svg" alt="" class="designs" id="design1"></img>
                         <p>WE DESIGN</p>
@@ -90,7 +95,7 @@
         
         </section class="products">
 
-            <div class="products">
+            <div class="products responsive">
                 <div class="text-container">
                     <h1>NEED MORE FOR YOUR FLEET OF ELEVATORS</h1>
                     <h2>ALL OUR PRODUCTS ARE MADE <br>
@@ -168,7 +173,7 @@
 
         <section class="motto">
 
-            <div class="row">
+            <div class="row responsive">
                 <div class="column" id="motto-txt">
                     <p><br>With your trust since 1943.</p>
                 </div>
@@ -181,7 +186,7 @@
 
         <section class="contact">
 
-            <div class="row">
+            <div class="row responsive">
                 <div class="column">
                     <p class="usa">UNITED STATES OFFICE</p>
                     <p class="usa-address">456 HARLEM BOULEVARD<br>
@@ -203,5 +208,6 @@
 
     </main>
 
+    <script src="script.js" defer></script>
 </body>
 </html>
