@@ -93,22 +93,13 @@ nav ul li a:hover{
     height: 120vh;
     background: url(images/bkg_1\ 1.png);
     background-size: cover;
-    background-position: auto;
-}
-.miss-cont{
-    
-}
-.mission-text{
-    position: relative;
-    left: auto;
-    top: 570px;
-    padding: 5px;
+    background-position: center;
 }
 #motto-1{
     position: relative;
     margin-top: 70vh;
     font-weight: 700;
-    font-size: 40px;
+    font-size: 250%;
     color: #FFFFFF;
 }
 #motto-2{
@@ -118,14 +109,9 @@ nav ul li a:hover{
     text-align: center;
     color: #FFFFFF;
 }
-#elevator-btn{
-    position: relative;
-    display: inline;
-    left: 600px;
-    padding-top: 30px;
-}
 
-/* Mission section */
+
+/* We Do Section */
 #container-color{
     background-color: #383838;
 }
@@ -142,10 +128,8 @@ nav ul li a:hover{
 }
 .section-title{
     position: relative;
-    left: 0px;
-    top: 0px;
     font-weight: 800;
-    font-size: 45px;
+    font-size: 5vh;
     text-align: center;
     color: #FFFFFF;
 }
@@ -385,4 +369,93 @@ section.motto .row{
 .column #copy{
     color: #292929;
     font-size: 30%;
+}
+
+
+/* FOR RESPONSIVENESS */
+@media (max-width: 1100px) {
+
+    /*OUR MISSION*/
+    #motto-1{
+        font-size: 180%;
+        margin-top: 80%;
+    }
+    #motto-2{
+        font-size: 300%;
+        margin-bottom: 5%;
+    }
+    .miss-content{
+        margin-bottom: 12.5%;
+    }
+    .miss-content img{
+        position: absolute;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .our-mission{
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }    
+    
+    /*WE DO*/
+    .we-do .responsive{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .we-do .container{
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .sub-title{
+        font-size: 2vh;
+        margin-bottom: 1rem;
+    }
+    
+    .section-title{
+        font-size: 3vh;
+        margin-bottom: 2rem;
+    }
+
+    .texts .separator{
+        padding-top: 5 em;
+    }
+
+    .we-do .last{
+        margin-bottom: 2rem;
+    }
+
+    /*SECURITY*/
+    .security .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .sec-image img{
+        width: 100%;
+        height: auto;
+    }
+
+    /*MOTTO*/
+    .motto .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .motto #motto-img img{
+        width: 100%;
+        height: auto;
+    }
+
+    /*Products*/
+    .products .products-images{
+        /* display: flex;
+        align-items: center;
+        flex-direction: column; */
+    }
 }
