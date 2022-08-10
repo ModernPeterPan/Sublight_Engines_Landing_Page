@@ -74,17 +74,32 @@ nav ul li a:hover{
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
     }
+    .nav-options{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background: rgba(0,0,0,0.69);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-options.active{
+        left: 0;
+        top: 15%;
+    }
 }
 .nav-options{
     position: fixed;
-    top: 70px;
+    top: 15%;
     gap: 0;
     flex-direction: row;
     width: 100%;
     transition: 0.3s;
-}
-.nav-item{
-    margin: 16px 0;
 }
 
 .our-mission{
@@ -358,14 +373,6 @@ section.motto .row{
 @media (max-width: 1100px) {
 
     /*OUR MISSION*/
-    .nav-options{
-        position: absolute;
-        top: -100%;
-        gap: 0;
-        flex-direction: row;
-        width: 100%;
-        transition: 0.3s;
-    }
     .navbar{
         background-size: 2%;
     }
