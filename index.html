@@ -7,6 +7,7 @@
     <title>Sublight Engines</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.2-web/css/all.min.css">
 </head>
 <body>
     
@@ -134,9 +135,10 @@
                 </div>
             </div>
         
-        <section class="form">
+        <section class="form-sec">
             
-            <div class="form">
+            <div class="form-div">
+
                 <div class="text">
                     <h1>STAY IN TOUCH WITH OUR CUSTOMER SERVICE</h1>
                     <h2>FEEL FREE TO CONTACT US
@@ -144,31 +146,51 @@
                     </h2>
                     <img src="images/separator-black.svg" alt=""></img>
                 </div>
-                <form>
-                    <div class="form">
+                
+                <form class="form" id="form">
+                    <div class="form-control">
                         <label class="label" for="name" id="label1">NAME *</label><br>
-                        <input class="input" type="text" name="name" id="name"><br>
+                        <input class="input" placeholder="Enter your full name" type="text" name="name" id="full-name"><br>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
                         <label class="label" for="email" id="label2">EMAIL ADDRESS *</label><br>
-                        <input class="input" type="email" name="email" id="email">
-                        <div class="input-column">
-                            <div class="number">
-                                <label class="label" for="phone" id="label3">PHONE NUMBER</label><br>
-                                <input class="input row-input" type="number" name="phone" id="phone"><br>
-                            </div>
-                            <div class="lang">
-                                <label class="label" for="language" id="lab-lang">PREFERRED LANGUAGE</label><br>
-                                <select class="input row-input" name="languages" id="langs">
-                                <option value=""> SELECT </option>
-                                <option value="en">ENGLISH</option>
-                                <option value="fr">FRANÇAIS</option>
-                                </select>
-                            </div>
+                        <input class="input" placeholder="yourname@company.com" type="email" name="email" id="email"><br>
+                        <i class="fas fa-check-circle"></i>
+                        <i class="fas fa-exclamation-circle"></i>
+                        <small>Error message</small>
+                    </div>
+
+                    <div class="input-column">
+                        <div class="form-control number">
+                            <label class="label" for="phone" id="label3">PHONE NUMBER</label><br>
+                            <input class="input row-input" placeholder="0 (000) 000-0000" type="tel" name="phone" id="phone"><br>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
                         </div>
-                        <div class="submit">
-                            <input class="input" type="button" value="SUBMIT">
+                        <div class="form-control lang">
+                            <label class="label" for="language" id="lab-lang">PREFERRED LANGUAGE</label><br>
+                            <select class="input row-input" name="languages" id="langs">
+                            <option value="Select"> Select </option>
+                            <option value="en">English</option>
+                            <option value="fr">Français</option>
+                            </select>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <small>Error message</small>
                         </div>
                     </div>
+                    <div class="form-control">
+                        <div class="submit">
+                            <button>Submit</button>
+                        </div>       
+                    </div>
                 </form>
+
             </div>
 
         </section>
