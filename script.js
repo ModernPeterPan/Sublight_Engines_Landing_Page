@@ -52,8 +52,8 @@ function checkInputs() {
     }
 
     if(!phoneValue) {
-        setErrorFor(phone, 'You need to put a valid phone number');
-    } else if(!isPhone(phone)){
+        setErrorFor(phone, 'You need to put a phone number');
+    } else if(!isPhone(phoneValue)){
         setErrorFor(phone, 'You need to put a valid phone number');
     } else {
         setSuccessFor(phone);
@@ -87,5 +87,6 @@ function isEmail(email) {
 }
 
 function isPhone(phone) {
-    return /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/.test(phone);
+    return /^\+?\d?\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/.test(phone);
+    // return /^(1|)[2-9]\d{2}[2-9]\d{6}$/.test(phone);
 }
