@@ -7,7 +7,7 @@
     width: 100%;
     height: auto;
 }
-nav {
+.navbar {
     position: absolute;
     width: 100%;
     height: 68px;
@@ -15,43 +15,44 @@ nav {
     top: 24px;
     background: rgba(0,0,0,0.69);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .cie-logo{
     position: relative;
-    top: -9px;
+    top: 2px;
     left: 20px;
 }
+.cie-logo img{
+    width: 100%;
+}
 .nav-options{
-    position: relative;
-    left: 10%;
-    width: 40%;
-    float: right;
+    right: 5px;
+    width: 470px;
     margin: 0;
     padding: 0;
-    display: flex;
-    /* white-space: nowrap; */
 }
 
-/* nav ul li {
-    display: inline-block;
-} */
+nav ul li {
+    list-style: none;
+}
 nav ul li a{
-    align-items: right;
-    text-align: right;
+    text-align: center;
     color: #fff;
-    padding: 12px 15px;
+    padding: 1rem;
     text-decoration: none;
+    display: block;
     font-size: 2vh;
     font-weight: bold;
     text-transform: uppercase;
 }
 nav ul li a:hover{
-    background: rgba(0,0,0,0.69);
-    border-radius: 6px;
+    background-color: #555;
 }
-.nav-link{
-    float: right;
-    transition: 0.7s ease;
+.nav-options ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 .hamburger{
     display: none;
@@ -66,7 +67,7 @@ nav ul li a:hover{
     transition: all 0.3s ease-in-out;
     background-color: #fff;
 }
-@media(max-width:830px){
+@media(max-width:940px){
     .hamburger{
         position: fixed;
         display: block;
@@ -84,21 +85,26 @@ nav ul li a:hover{
     }
     .nav-options{
         position: fixed;
-        left: -100%;
-        top: 70px;
+        left: -200%;
+        top: 90px;
         gap: 0;
         flex-direction: column;
         background: rgba(0,0,0,0.69);
         width: 100%;
         text-align: center;
-        /* transition: 0.3s; */
+        align-items: right;
+        transition: 0.3s;
     }
     .nav-item{
         margin: 16px 0;
     }
     .nav-options.active{
         left: 0;
-        top: 15%;
+        top: 91px;
+    }
+    .nav-options a{
+        align-items: center;
+        text-align: center;
     }
 }
 
@@ -396,10 +402,81 @@ section.motto .row{
 
 
 /* FOR RESPONSIVENESS */
-@media (max-width: 830px) {
+@media (max-width: 1200px) {
+    
+    /*FORM*/
+    .form .text h1{
+        font-size: 2vh;
+        margin-bottom: 3%;
+    }
+    .form .text h2{
+        font-size: 4vh;
+        margin-bottom: 3%;
+    }
+    .form img{
+        width: 50%;
+    }
 
-    /*OUR MISSION*/
+
+
+    .form{
+        padding: 3%;
+        gap: 1%;
+        align-items: left;
+        text-align: left;
+    }
+    #label1{
+        font-size: 2vh;
+        font-weight: bold;
+        text-align: left;
+    }
+    #label2{
+        font-size: 2vh;
+        font-weight: bold;
+        text-align: left;
+    }
+    #label3{
+        font-size: 2vh;
+        font-weight: bold;
+        text-align: left;
+    }
+    #lab-lang{
+        font-size: 2vh;
+        font-weight: bold;
+        width: 100%;
+        height: auto;
+    }
+    .input-column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0%;
+    }
+    .input{
+        width: 100%;
+        height: auto;
+        gap: 3%;
+        padding: 2%;
+    }
+    .input-column .input{
+        width: 100%;
+        height: auto;
+        gap: 3%;
+        padding: 2%;
+    }
+    .form button{
+        width: 100%;
+        padding: 2%;
+        margin-top: 5%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 940px) {
+
+    /*navbar*/
     .navbar{
+        position: fixed;
         background-size: 2%;
         z-index: 10;
     }
@@ -412,10 +489,11 @@ section.motto .row{
     .cie-logo{
         position: fixed;
         width: 50%;
-        top: 5%;
+        top: auto;
+        z-index: 10;
     }
 
-
+    /*OUR MISSION*/
     #motto-1{
         font-size: 180%;
         margin-top: 80%;
@@ -522,74 +600,6 @@ section.motto .row{
     }
     .img-text-box{
         width: 70%;
-    }
-
-
-    /*FORM*/
-    .form .text h1{
-        font-size: 2vh;
-        margin-bottom: 3%;
-    }
-    .form .text h2{
-        font-size: 4vh;
-        margin-bottom: 3%;
-    }
-    .form img{
-        width: 50%;
-    }
-
-
-
-    .form{
-        padding: 3%;
-        gap: 1%;
-        align-items: left;
-        text-align: left;
-    }
-    #label1{
-        font-size: 2vh;
-        font-weight: bold;
-        text-align: left;
-    }
-    #label2{
-        font-size: 2vh;
-        font-weight: bold;
-        text-align: left;
-    }
-    #label3{
-        font-size: 2vh;
-        font-weight: bold;
-        text-align: left;
-    }
-    #lab-lang{
-        font-size: 2vh;
-        font-weight: bold;
-        width: 100%;
-        height: auto;
-    }
-    .input-column{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0%;
-    }
-    .input{
-        width: 100%;
-        height: auto;
-        gap: 3%;
-        padding: 2%;
-    }
-    .input-column .input{
-        width: 100%;
-        height: auto;
-        gap: 3%;
-        padding: 2%;
-    }
-    .form button{
-        width: 100%;
-        padding: 2%;
-        margin-top: 5%;
-        text-align: center;
     }
 
 
