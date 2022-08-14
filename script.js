@@ -90,3 +90,44 @@ function isPhone(phone) {
     return /^\+?\d?\s?\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}$/.test(phone);
     // return /^(1|)[2-9]\d{2}[2-9]\d{6}$/.test(phone);
 }
+
+
+// Email.js Job
+function success(){
+    swal({
+        title: "Excellent!",
+        text: "You actually pressed a button!",
+        icon: "success",
+        button: "Parles-moi de d'ça!",
+    });
+}
+
+function sendEmail(fullName) {
+    emailjs.send("service_zp06mdm","template_7jgpe5v",{
+        to_name: fullName,
+        from_name: "Sublight Engines",
+        message: "Thank you for submitting your infos. One of my employees will look at it when he finish his Netflix Show.",
+    });
+}
+
+function validate() {
+    const fullName = document.getElementById('full-name');
+    const email = document.getElementById('email');
+    const phone = document.getElementById('phone');
+    const language = document.getElementById('langs');
+    const sub = document.getElementById('sub');
+
+    sub.addEventListener("click", (e)=>{
+        e.preventDefault
+
+        if(fullName.value == "" || email.value == "" || phone.value == "" || language.value == "") {
+            console.log("Didn't work.");
+        } else {
+            console.log("success icon")
+            success();
+            sendEmail(fullName.value);
+            console.log("email sent")
+        }
+    })
+}
+validate();

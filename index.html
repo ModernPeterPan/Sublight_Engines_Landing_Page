@@ -190,7 +190,7 @@
                     </div>
                     <div class="form-control">
                         <div class="submit">
-                            <button>Submit</button>
+                            <button name="" id="sub">Submit</button>
                         </div>       
                     </div>
                 </form>
@@ -237,5 +237,18 @@
     </main>
 
     <script src="script.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("MU1zlGS4RKP5atQjr");
+        })();
+    </script>
+
+    <!-- Sweet Alert.js -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
 </body>
 </html>
